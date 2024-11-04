@@ -1,4 +1,4 @@
-public class testingGitHub {
+public class testGitHub {
     public static void main(String[] args) {
 
         //Test on GitHub
