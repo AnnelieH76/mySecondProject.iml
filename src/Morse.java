@@ -57,7 +57,7 @@ public class Morse {
                 return "Please write characters A-Z";
             }
         }
-        return morse.toString(); // Returnerar hela Morsekod-strängen.
+        return morse; // Returnerar hela Morsekod-strängen.
     }
 
     public static String fromMorseCode(String morse) {
@@ -69,16 +69,15 @@ public class Morse {
         String[] letters = morse.split(" "); //Dela upp inmatad Morse-kod i en array där varje element representerar en bokstav,
         // separerad med mellanslag.
 
-        for (int i = 0; i < letters.length; i++) {
-            String letter = letters[i]; //Hämta bokstav vid position i
-
+        //Hämta bokstav vid position i
+        for (String letter : letters) {
             if (reverseMorseCodeMap.containsKey(letter)) { //om Morsekoden finns i den omvända hash mapen
                 text = text.concat(String.valueOf(reverseMorseCodeMap.get(letter))); // Lägg till motsvarande bokstav i textsträngen
             } else {
                 return "Error. Invalid input";
             }
         }
-        return text; //Returnerar den översatta textsträngen.
+        return text; //Returnerar den översatta textsträngen
     }
 }
 

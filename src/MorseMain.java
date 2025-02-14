@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MorseMain {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        boolean validChoice = false; //Avgör om användaren har gjort ett giltigt val och avsluta loopen.
+        boolean validChoice = false; //Avgör om användaren har gjort ett giltigt val och avsluta loopen
 
         while (!validChoice) { //Programmet kommer att fortsätta fråga tills ett korrekt val görs.
             System.out.println("Välj 1: För att översätta engelska till morsekod");

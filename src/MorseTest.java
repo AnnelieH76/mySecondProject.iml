@@ -2,7 +2,6 @@
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class MorseTest {
 
     @Test
@@ -41,7 +40,7 @@ public class MorseTest {
     }
 
     @Test
-    void testÅ() {
+    void testSwedishLetter() {
         String expected = "Error. Invalid input";
         String actual = Morse.fromMorseCode("Å");
         assertEquals(expected, actual);
