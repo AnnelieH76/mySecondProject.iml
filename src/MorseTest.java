@@ -45,4 +45,11 @@ public class MorseTest {
         String actual = Morse.fromMorseCode("Å");
         assertEquals(expected, actual);
     }
+
+    @Test
+    void THANK_YOU() {
+        String expected = "- .... .- -. -.- -.-- --- ..-";
+        String actual = Morse.toMorseCode("Thank you");
+        assertEquals(expected, actual);
+    }
 }
