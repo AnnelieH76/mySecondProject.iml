@@ -17,7 +17,7 @@ public class MorseMain {
                 if (choice == 1) {
                     System.out.println("Please write something in English (A-Z): ");
                     String inputText = scan.nextLine(); //Läser in text
-                    String morseCode = Morse.toMorseCode(inputText);//Anropar metoden toMorseCode texten
+                    String morseCode = Morse.toMorseCode(inputText);//Anropar metoden toMorseCode som översätter texten
                     System.out.println(morseCode);// Skriver ut morsekoden
                     validChoice = true;  // Avslutar loopen
                 } else if (choice == 2){
@@ -31,7 +31,7 @@ public class MorseMain {
                     System.out.println("Invalid number. Choose between 1 or 2."); //Om inmatning är ett ogiltigt heltal.
                 }
             } catch (NumberFormatException e) {
-                System.out.println(e + "Empty or invalid input. Please try again."); //Om imnatning är tom eller är ett ogiltigt tecken.
+                System.out.println(e + "Empty or invalid input. Please try again."); //Om inmatning är tom eller är ett ogiltigt tecken.
             }
         }
         scan.close();
